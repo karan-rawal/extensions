@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Karan's Rest Client</title>
+</head>
+<body>
+
+	<!-- url -->
+	<label for="url" class="_msg_">URL: 
+	</label> 
+    <input type="text" name="url" id="url">
+    <br>
+
+    <!-- methods -->
+	<label class="_msg_">Method: </label>
+	<label class="labelvert" for="get"><input class="radio" type="radio" checked="" value="get" name="method" id="get" tabindex="2"> GET</label>
+	<label class="labelvert" for="post"><input class="radio" type="radio" value="post" name="method" id="post" tabindex="2"> POST</label>
+	<label class="labelvert" for="put"><input class="radio" type="radio" value="put" name="method" id="put" tabindex="2"> PUT</label>
+	<label class="labelvert" for="delete"><input class="radio" type="radio" value="delete" name="method" id="delete" tabindex="2"> DELETE</label>    
+
+
+	<!-- headers -->
+	<br>
+	<p>
+		<label for="headers">headers</label>
+		<textarea name="headers" id="headers" tabindex="3"></textarea>
+	</p>
+
+
+	<!-- headers -->
+	<br>
+	<p id="dataField" style="display:none">
+		<label for="data">Post/Put Data</label>
+		<textarea name="data" id="data" tabindex="3"></textarea>
+	</p>
+
+
+
+	<p>
+		<input type="button" value="send" id="submit" tabindex="5"> 
+		<input type="button" value="clear" id="reset"> 
+	</p>
+
+
+	<!-- response -->
+
+	<br>
+	<p>
+	Response Status : <span id="responseStatus"></span>
+	</p>
+
+	<br>
+	<p>
+		<label for="response">Headers</label>
+		<textarea name="response" id="responseHeaders" tabindex="3"></textarea>
+	</p>
+
+	<br>
+	<p>
+	Response Text : <textarea name="responseText" id="responseText" tabindex="3"></textarea>
+	</p>	
+
+
+
+
+
+
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="requester.js"></script>
+	<script type="text/javascript" src="setup.js"></script>
+</body>
+</html>

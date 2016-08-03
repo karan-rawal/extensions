@@ -1,0 +1,16 @@
+{
+  "name": "Rest Client",
+  "version": "1",
+  "manifest_version": 2, 
+  
+  "description": "Rest client assignment",
+
+
+  "browser_action": {
+    "default_title": "Rest Client"
+  },
+
+  "options_page": "index.html",
+  "background_page": "background.html",
+  "permissions": ["tabs", "http://*/*", "https://*/*"]
+}
