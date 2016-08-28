@@ -10,7 +10,9 @@
     "default_title": "Rest Client"
   },
 
-  "options_page": "index.html",
-  "background_page": "background.html",
+  "background":{
+    "scripts":["background.js"]
+  },
+
   "permissions": ["tabs", "http://*/*", "https://*/*"]
 }
