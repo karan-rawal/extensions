@@ -1,0 +1,23 @@
+{
+  "name": "Screenshare Extension",
+  "short_name" : "Screen Sharing Extension",
+  "description": "Screenshare Extension",
+  "version": "1.0.5",
+  "manifest_version": 2,
+  "icons": {
+    "128": "icon.png"
+  },
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content-script.js"]
+    }
+  ],
+  "permissions": [
+    "desktopCapture",
+    "<all_urls>"
+  ]
+}

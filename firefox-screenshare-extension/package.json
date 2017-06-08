@@ -1,0 +1,17 @@
+{
+  "title": "Screenshare Add-on",
+  "name": "screenshare-ff-liveh2h",
+  "version": "0.0.16",
+  "description": "A simple screen sharing add-on",
+  "main": "index.js",
+  "author": "LiveH2H",
+  "engines": {
+    "firefox": ">=38.0a1",
+    "fennec": ">=38.0a1"
+    },
+    "license": "MIT",
+    "keywords": [
+    "jetpack"
+    ],
+   "permissions": {"private-browsing": true}
+}
